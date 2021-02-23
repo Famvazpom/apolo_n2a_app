@@ -1,0 +1,15 @@
+asgiref
+autopep8
+django==2.2.10
+pycodestyle
+pytz
+sqlparse
+Unipath
+dj-database-url
+python-decouple
+gunicorn
+whitenoise
+pandas
+numpy
+werkzeug
+python-docx
