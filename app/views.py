@@ -37,12 +37,12 @@ class resultsView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['directorios'] = self.get_file_data('app/db_results/directorios.json')
-        context["palabras"] = self.process_dataframe('app/db_results/palabras_ciclo.json')
+        context['directorios'] = self.get_file_data('staticfiles/db_results/directorios.json')
+        context["palabras"] = self.process_dataframe('staticfiles/db_results/palabras_ciclo.json')
 
-        context['ocurrencias'] = self.process_dataframe('app/db_results/ocurrencia.json')
-        context['unicas'] = self.process_dataframe('app/db_results/unicas.json')
-        context['values'] = self.process_dataframe('app/db_results/values.json')
+        context['ocurrencias'] = self.process_dataframe('staticfiles/db_results/ocurrencia.json')
+        context['unicas'] = self.process_dataframe('staticfiles/db_results/unicas.json')
+        context['values'] = self.process_dataframe('staticfiles/db_results/values.json')
         return context
     
     def get(self,request,*args, **kwargs):
